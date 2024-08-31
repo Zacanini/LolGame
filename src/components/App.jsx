@@ -3,6 +3,7 @@ import { getCampeao } from './SortCard';
 import { Imagem1 } from './Images';
 import Button from "@mui/material/Button";
 import { createGlobalStyle } from 'styled-components';
+import { Status } from './status';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -39,6 +40,7 @@ export const App = () => {
                     >
                         CLICK ME
                     </Button>
+                    <Status />
                     {console.log(champion)}
                 </div>
             </AppContext.Provider>
